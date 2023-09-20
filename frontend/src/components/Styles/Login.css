@@ -1,0 +1,108 @@
+body {
+  background-color: #f0f0f0;
+  padding-bottom: 20px;
+}
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.toggle-switch {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-label {
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+  background-color: #ccc;
+  border-radius: 13px;
+  cursor: pointer;
+  position: relative;
+}
+
+.toggle-inner {
+  display: block;
+  width: 22px;
+  height: 22px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  transition: left 0.3s;
+}
+
+.toggle-switch:checked + .toggle-label .toggle-inner {
+  left: 26px;
+}
+
+.toggle-switch:checked + .toggle-label {
+  background-color: #ff5800;
+}
+
+.login-form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 8px rgba(172, 152, 152, 0.2);
+  width: 300px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  margin: 200px;
+}
+
+.user-type-select,
+.input-group {
+  margin-bottom: 10px;
+  width: 100%; 
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; 
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #e21836;
+  background-image: linear-gradient(105deg, #ff5800, #e21836);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+button:hover{
+  background: #ff5800;
+}
+
+.user-type-toggle {
+  display: flex;
+  align-items: center;
+  margin-top: 20px; 
+}
+
+.user-type-toggle label {
+  margin-right: 10px; 
+}
+
+button[type="submit"] {
+  margin-top: 15px;
+}
+
+button[type="button"] {
+  margin-top: 15px;
+}
+

@@ -1,0 +1,66 @@
+.pageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  
+  .resultContainer {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px rgba(172, 152, 152, 0.2);
+    text-align: center;
+  }
+  
+  .resultContainer p {
+    margin: 10px 0;
+  }
+  
+.detailButton {
+  margin-top: 10px; 
+}
+.logoImage {
+  width: 100px; 
+  height: auto; 
+  display: block;
+  margin: 0 auto 16px; 
+}
+
+.applyButton {
+  margin-top: 10px; 
+}
+
+.input-group {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.left-input{
+  padding-right: 16px;
+  width: 250px;
+  position: relative;
+  align-items: center;
+}
+.right-input{
+  width: 250px;
+}
+.addon1 {
+  position: absolute;
+  right: 25px;
+  bottom: 8px;
+}
+
+
+.input-group select {
+  width: 100%;
+  padding: 7.5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
